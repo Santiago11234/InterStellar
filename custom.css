@@ -1,0 +1,38 @@
+.buton{
+    line-height: 100px;
+    width: 300px;
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;  
+    color: rgba(255,255,255,0.9);
+    border-radius: 100px;
+    background: linear-gradient(-45deg, rgb(60, 10, 145), rgb(70, 20, 125), rgb(80, 30, 105), rgb(90, 40, 85));
+    background-size: 600%;
+    animation: 8s anime linear infinite;
+    border: 2px white;
+    box-shadow: 6px 4px 26px 1px rgba(0, 0, 0, 0.24);
+    outline: none;
+}
+
+.buton:active{
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(3px);
+    border: 2px white;
+    outline: none;
+}
+button:focus,
+input[type=button]:focus {
+    outline: none;
+} 
+
+@keyframes anime{
+    0%{
+        background-position: 0% 50%
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
