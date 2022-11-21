@@ -16,7 +16,7 @@
 
 .buton:active{
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(3px);
+    transform: translate(-1px, 3px);
     border: 2px white;
     outline: none;
 }
