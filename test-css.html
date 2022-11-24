@@ -48,7 +48,17 @@
 </head >
 
 <body>
-    <div>
-        <button type="button" class="buton">Button</button>
+    <button onclick="hello();">Hello</button>
+    <button onclick="unHello();">UnHello</button>
+    <script>
+        function hello() {
+            curve.classList.add("hi");
+        }
+        function unHello() {
+            curve.classList.remove("hi");
+        }
+    </script>
+    <div id="curve" class="curve">
+        
     </div>
 </body>

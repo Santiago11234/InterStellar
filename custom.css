@@ -1,10 +1,19 @@
-.buton{
-    line-height: 100px;
-    width: 300px;
-    font-size: 30px;
+.gradientAnim {
+    background: linear-gradient(-45deg, rgb(60, 10, 145), rgb(70, 20, 125), rgb(80, 30, 105), rgb(90, 40, 85));
+    animation: 8s anime linear infinite;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.buton {
+    line-height: 50px;
+    width: 150px;
+    font-size: 15px;
     font-style: bold;
-    text-align: center;  
-    color: rgba(255,255,255,0.9);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
     border-radius: 100px;
     background: linear-gradient(-45deg, rgb(60, 10, 145), rgb(70, 20, 125), rgb(80, 30, 105), rgb(90, 40, 85));
     background-size: 600%;
@@ -14,25 +23,62 @@
     outline: none;
 }
 
-.buton:active{
+.buton:active {
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    transform: translate(-1px, 3px);
+    transform: translate(-1px, 2px);
     border: 2px white;
     outline: none;
 }
+
 button:focus,
 input[type=button]:focus {
     outline: none;
-} 
+}
 
-@keyframes anime{
-    0%{
+@keyframes anime {
+    0% {
         background-position: 0% 50%
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
+}
+
+.curve {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.curve::before {
+    content: '';
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: 150%;
+    right: -75%;
+    transform: translateY(-50%);
+    background: linear-gradient(-45deg, rgb(60, 10, 145), rgb(70, 20, 125), rgb(80, 30, 105), rgb(90, 40, 85));
+    background-size: 600%;
+    animation: 8s anime linear infinite;
+
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.curve.hi::before {
+    transform: translate(10%, -125%);
+    right: 52%;
+}
+
+.filler{
+    height: 800px;
 }
