@@ -40,6 +40,23 @@
   <link rel="stylesheet" href="index.css">
 
   <!--JS links-->
+  
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+ <script src="https://cdn.tailwindcss.com"></script> 
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+  <link rel="stylesheet" href="style.css" >
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.146.0/build/three.module.js",
+          "dat": "https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.2/dat.gui.js"
+
+        }
+      }
+    </script>
 
 
 </head>
@@ -103,11 +120,11 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="navLink ml-3" href="test-css.html">
-              LOGIN
-            </a>
-          </li>
+         <a style="text-decoration: none" href="FlyWIthUs.html">
+          <button type="button" class="vg-button btn btn-outline-primary, rounded-pill">Soar Today</button>
+         </a>
+        
+          
 
         </ul>
       </div>
@@ -115,5 +132,19 @@
   </nav>
 </header>
 
+
+
+
 <body class="bg-black">
+  
+  <div id="app">
+
+  </div>
+
+
+  <script type="module" src="./js/Planet.js"></script>
+  <script type="module" src="./js/Rotation.js"></script>
+  <script type="module" src="./js/index.js"></script>
+ 
+
 </body>
