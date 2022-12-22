@@ -104,6 +104,7 @@ controls.enableZoom = false;
 controls.enablePan = false;
 camera.position.z = 3;
 
+
 const directionalLight = new THREE.DirectionalLight( 0x000000, 1);
 directionalLight.castShadow = true;
 directionalLight.position.set(-75, 75, 0)
@@ -112,11 +113,13 @@ directionalLight.visible = true;
 scene.add( directionalLight );
 
 
+earthMesh.rotation.x = 0.5
+earthMesh.rotation.z = 0.3;
 
 
 function animate() {
     
-    earthMesh.rotation.y += 0.01;
+    earthMesh.rotation.y += 0.005;
 
 
     requestAnimationFrame(animate);
