@@ -60,7 +60,7 @@ renderer.render(scene, camera);
 
 //init all three.js create compononets
 var earthImg = new Image();
-earthImg.src="images/earth.jpeg"
+earthImg.src="Images/earth.jpeg"
 
 
 
@@ -104,9 +104,9 @@ controls.enableZoom = false;
 controls.enablePan = false;
 camera.position.z = 3;
 
-const directionalLight = new THREE.DirectionalLight( 0xFF0000, 1);
+const directionalLight = new THREE.DirectionalLight( 0x000000, 1);
 directionalLight.castShadow = true;
-directionalLight.position.set(-100, 100, 0)
+directionalLight.position.set(-75, 75, 0)
 directionalLight.target = earthMesh;
 directionalLight.visible = true;
 scene.add( directionalLight );

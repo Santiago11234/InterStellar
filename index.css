@@ -103,7 +103,7 @@ hr {
   }
 
 .fade-In {
-    animation: fadeIn 20s;
+    animation: fadeIn 1s;
 }
 .fade-in-text {
     font-family: 'Exo 2', sans-serif;
