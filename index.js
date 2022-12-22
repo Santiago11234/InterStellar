@@ -60,7 +60,7 @@ renderer.render(scene, camera);
 
 //init all three.js create compononets
 var earthImg = new Image();
-earthImg.src="/Images/earth.jpeg"
+earthImg.src="Images/earth.jpeg"
 
 
 
